@@ -1,0 +1,3 @@
+add_lunch_combo aicp_q5-user
+add_lunch_combo aicp_q5-userdebug
+add_lunch_combo aicp_q5-eng

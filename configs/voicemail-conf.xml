@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<voicemail>
+
+<voicemail numeric="334020" carrier="TELCEL" vmnumber="*86" vmtag="Buzón de Voz" />
+
+</voicemail>
