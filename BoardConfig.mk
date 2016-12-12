@@ -13,7 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOARD_PLATFORM := mt6735m
+TARGET_BOARD_PLATFORM := mt6753
+
+
+
+
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -51,13 +55,11 @@ TARGET_USERIMAGES_USE_EXT4:=true
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 #Kenerl Source 
-TARGET_KERNEL_SOURCE := devoce/quantum/q5/kernel 
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := q5_cyanogenmod13_debug_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_SOURCE := device/quantum/q5/kernel 
+TARGET_KERNEL_CONFIG := q5_defconfig
 MTK_APPENDED_DTB_SUPPORT := yes
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+
 # Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
 BOARD_KERNEL_BASE = 0x40078000
