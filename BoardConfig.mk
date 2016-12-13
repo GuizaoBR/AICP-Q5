@@ -77,7 +77,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 USE_MINIKIN := true
 
 # Audio
-USE_CUSTOM_AUDIO_POLICY := 1
+
 BOARD_USES_MTK_AUDIO := true
 
 # Bluetooth
