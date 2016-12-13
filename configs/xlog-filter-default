@@ -1,3 +1,0 @@
-XLOG-FILTER-V2
-ALL	verbose/debug+verbose/verbose
-TAG	AppLaunch	off
