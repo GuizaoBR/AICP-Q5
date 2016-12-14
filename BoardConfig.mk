@@ -51,11 +51,11 @@ BOARD_TAGS_OFFSET = 0x0df88000
 
 ifeq ($(FORCE_32_BIT),true)
 TARGET_KERNEL_ARCH := arm
-BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,64N2
 BOARD_KERNEL_OFFSET = 0x00008000
 else
 TARGET_KERNEL_ARCH := arm64
-BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,64N2
 BOARD_KERNEL_OFFSET = 0x00008000
 TARGET_USES_64_BIT_BINDER := true
 endif
@@ -146,12 +146,12 @@ EXTENDED_FONT_FOOTPRINT := true
 #############################################################################################
 #TWRP
 #############################################################################################
-#RECOVERY_VARIANT := twrp
-#TW_THEME := portrait_mdpi
-#TW_INCLUDE_CRYPTO := true
-#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.twrp
-#TW_USE_KEY_CODE_TOUCH_SYNC := 330
-#RECOVERY_SDCARD_ON_DATA := true
-#
-#TARGET_USERIMAGES_USE_EXT4 := true
-#BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+RECOVERY_VARIANT := twrp
+TW_THEME := portrait_mdpi
+TW_INCLUDE_CRYPTO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.twrp
+TW_USE_KEY_CODE_TOUCH_SYNC := 330
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+
+
